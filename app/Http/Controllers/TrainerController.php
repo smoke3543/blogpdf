@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Barryvdh\DomPDF\Facade as PDF;
+use PDF;
 use App\Trainer;
 
 class TrainerController extends Controller
@@ -23,7 +23,7 @@ class TrainerController extends Controller
     public function pdf()
     {
         $trainers=Trainer::all();;
-        $pdf=PDF::loadView('pdf.listado',compact('trainers'));
+        $pdf =PDF::loadView('pdf.listado',compact('trainers'));
         return $pdf->download('listado.pdf');
     }
     /**

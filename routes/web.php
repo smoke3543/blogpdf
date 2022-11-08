@@ -84,4 +84,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('delete/{id}','TrainerController@destroy');
-Route::get('descargar-entrenadores')
+Route::get('descargar-entrenadores', 'TrainerController@pdf')->name('listado.pdf');
