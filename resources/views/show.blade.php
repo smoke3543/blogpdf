@@ -24,5 +24,7 @@
                 Mostrar... </a>
                 <a href="/trainers/{{$trainer->id}}/edit" class="btn btn-secondary">
                 Editar... </a>
+                <a href="{{route('listado.pdf')}}"class="btn btn-sm btn-secondary">
+                Descargar entrenadores en pd
             </div>
 @endsection

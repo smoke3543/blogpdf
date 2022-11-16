@@ -17,10 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get("/mi_primer_ruta", function(){
-    return "Hola Ricardo";
+    return "Hola Cinthia";
 });
 Route::get("/name/{name}", function($name){
- return "hola soy ".$name;   
+ return "hola soy ".$name;
 });
 Route::get("/name/{name}/lastname/{apellido}",
 function($name, $apellido){

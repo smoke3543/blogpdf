@@ -12,14 +12,14 @@
 @extends('layouts.app')
 @section('title','Trainers')
 @section('content')
-     
+
 @csrf
     <p>Listado de Trainers</p>
     <div class="row">
     @foreach ($trainers as $trainer)
     <div class="col-sm">
-    <div class="card" style="width: 18rem;"> 
-  <img class="card-img-top rounded-circle mx-auto d-blok" 
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top rounded-circle mx-auto d-blok"
   src="" alt="">
   <img style="height: 100px; width: 100px;
   background-color: #EFEFEF; margin: 20px;
@@ -36,10 +36,10 @@
       Delete</a>
       <a href="trainers/{{$trainer->id}}"class="btn btn-secondary">
         Mostrar...</a>
+
 </form>
   </div>
 </div>
 </div>
 @endforeach
 </div>
-         
